@@ -1,23 +1,35 @@
 ---
-
 layout: archive
-
 title: "Blog Posts"
-
 permalink: /posts/
-
 author_profile: true
-
-entries_layout: grid
-
 ---
 
-<div class="entries-list">
+{% assign categories_max = 0 %}
+{% for category in site.categories %}
+  {% if category[1].size > categories_max %}
+    {% assign categories_max = category[1].size %}
+  {% endif %}
+{% endfor %}
 
-  {% for post in site.posts %}
-
-    {% include archive-single.html type="grid" %}
-
+<ul class="taxonomy__index">
+  {% for category in site.categories %}
+    <li>
+      <a href="#{{ category[0] | slugify }}">
+        <strong>{{ category[0] }}</strong> <span class="taxonomy__count">{{ category[1].size }}</span>
+      </a>
+    </li>
   {% endfor %}
+</ul>
 
-</div>
+{% for category in site.categories %}
+  <section id="{{ category[0] | slugify }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ category[0] }}</h2>
+    <div class="entries-list">
+      {% for post in category[1] %}
+        {% include archive-single.html type="grid" %}
+      {% endfor %}
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+{% endfor %}
