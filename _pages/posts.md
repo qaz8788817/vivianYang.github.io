@@ -85,7 +85,7 @@ author_profile: true
   }
 </style>
 
-<div class="all-posts-container">
+<!-- <div class="all-posts-container">
   {% for post in site.posts %}
     <a href="{{ post.url | relative_url }}" class="custom-post-item">
       <div class="post-image-wrapper">
@@ -101,7 +101,7 @@ author_profile: true
   {% endfor %}
 </div>
 
-<hr style="margin: 60px 0;">
+<hr style="margin: 60px 0;"> -->
 
 <h3 class="archive__subtitle">View by Category</h3>
 {% for category in site.categories %}
