@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: archive
 title: "Blog Posts"
 permalink: /posts/
@@ -9,4 +9,14 @@ entries_layout: grid
   {% for post in site.posts %}
     {% include archive-single.html %}
   {% endfor %}
-</div>
+</div> -->
+
+---
+layout: archive
+title: "Blog Posts"
+permalink: /posts/
+author_profile: true
+entries_layout: grid
+---
+
+{% include group-by-array collection=site.posts field="categories" %}
