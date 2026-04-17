@@ -8,9 +8,7 @@ author_profile: true
 sidebar:
   nav: "main"
 ---
-You can check my briefly idea of project here. Click the button to download.
-
-<a href="{{ site.baseurl }}/assets/project/ghost removal.pdf" class="btn btn--info" target="_blank">Dwonload PDF</a>
+2023/07 - 2023/08於臺灣國家衛生研究院實習期間所完成的線上系統。
 
 ### 簡介
 dMRI腦影像在掃描完之後，需要經過多項前處理才能進行後續的資料分析，然而這些處理都需要透過程式碼指令才能運作。
