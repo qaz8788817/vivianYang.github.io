@@ -121,9 +121,9 @@ author:
   email            :
   # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
-    - label: "Email"
+    - label: "Email: gn00088504@gmail.com"
       icon: "fas fa-fw fa-square-envelope"
-      url: "gn00088504@email.com"
+      url: "#"
     - label: "LinkedIn"
       icon: "fas fa-fw fa-code"
       url: "https://www.linkedin.com/in/vivian-yang-32b210245"
