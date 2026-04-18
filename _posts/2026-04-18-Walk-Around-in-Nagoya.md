@@ -1,5 +1,5 @@
 ---
-title: "第二次跟教授討論題目"
+title: "名古屋小旅行"
 header:
     teaser: /assets/images/2026-04-18/aoi celestie anko butter toast.jpg
 gallery:
