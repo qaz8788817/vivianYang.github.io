@@ -37,6 +37,7 @@ tags:
 hmwr是我第一次看到有薩克斯風在音樂裡面的樂團！是一大特點，
 去年年底才成立的樂團，希望之後他們有機會可以到臺灣演出~~~
 吊飾真的有夠可愛，很慶幸有聽到他們的現場演出！
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/4l7nCLiWbmXquGkZ38a2Tp?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 ### 下午
 下午在名古屋PARCO跟綠洲21逛好久...雙腳都快斷掉了，
