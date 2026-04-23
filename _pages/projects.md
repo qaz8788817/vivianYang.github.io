@@ -20,6 +20,8 @@ author_profile: true
     transition: all 0.3s ease;
     text-decoration: none !important;
     color: inherit;
+    display: flex;
+    flex-direction: column; /* 讓內容垂直排列 */
   }
   .project-card:hover {
     transform: translateY(-5px);
@@ -29,9 +31,39 @@ author_profile: true
     width: 100%;
     height: 180px;
     object-fit: cover;
+    flex-shrink: 0;
   }
   .project-info {
     padding: 15px;
+    flex-grow: 1; /* 讓資訊區自動填滿剩下的空間 */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 1. 統一標題高度 (最多 2 行) */
+  .project-title {
+    margin: 0 0 10px 0 !important;
+    font-size: 1.25em !important;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.6em; /* 即使只有一行，也會佔據兩行的空間，確保對齊 */
+    line-height: 1.3;
+  }
+
+  /* 2. 統一摘要高度 (最多 3 行) */
+  .project-excerpt {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 限制顯示三行 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 4.5em; /* 固定三行的高度 (1.5 * 3) */
   }
 </style>
 
@@ -40,8 +72,8 @@ author_profile: true
     <a href="{{ project.url | relative_url }}" class="project-card">
       <img src="{{ project.header.teaser | relative_url }}" class="project-img">
       <div class="project-info">
-        <h3 style="margin:0;">{{ project.title }}</h3>
-        <p style="font-size: 0.9em; color: #666;">{{ project.excerpt }}</p>
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-excerpt">{{ project.excerpt | strip_html }}</p>
       </div>
     </a>
   {% endfor %}
