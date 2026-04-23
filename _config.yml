@@ -155,7 +155,7 @@ footer:
       # icon: "fab fa-fw fa-square-facebook"
       # url:
     - label: "LinkedIn"
-      icon: "fas fa-fw fa-code"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/vivian-yang-32b210245"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
