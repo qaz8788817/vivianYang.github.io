@@ -2,7 +2,7 @@
 layout: single
 title: "Research Library"
 permalink: /research/
-author_rpfile: true
+author_profile: true
 ---
 
 這裡是我的研究知識庫，包含 dMRI 指標、機器學習與臨床應用。
