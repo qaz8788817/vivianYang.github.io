@@ -1,19 +1,19 @@
 ---
 layout: archive
-title: "Projects"
-permalink: /projects/
+title: "Research"
+permalink: /research/
 author_profile: true
 ---
 
 <style>
   /* 讓專案列表看起來更像專業作品集 */
-  .project-grid {
+  .research-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     margin-top: 20px;
   }
-  .project-card {
+  .research-card {
     border: 1px solid #eee;
     border-radius: 12px;
     overflow: hidden;
@@ -23,17 +23,17 @@ author_profile: true
     display: flex;
     flex-direction: column; /* 讓內容垂直排列 */
   }
-  .project-card:hover {
+  .research-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
-  .project-img {
+  .research-img {
     width: 100%;
     height: 180px;
     object-fit: cover;
     flex-shrink: 0;
   }
-  .project-info {
+  .research-info {
     padding: 15px;
     flex-grow: 1; /* 讓資訊區自動填滿剩下的空間 */
     display: flex;
@@ -41,7 +41,7 @@ author_profile: true
   }
 
   /* 1. 統一標題高度 (最多 2 行) */
-  .project-title {
+  .research-title {
     margin: 0 0 10px 0 !important;
     font-size: 1.25em !important;
     font-weight: bold;
@@ -54,7 +54,7 @@ author_profile: true
   }
 
   /* 2. 統一摘要高度 (最多 3 行) */
-  .project-excerpt {
+  .research-excerpt {
     font-size: 0.9em;
     color: #666;
     line-height: 1.5;
@@ -67,13 +67,13 @@ author_profile: true
   }
 </style>
 
-<div class="project-grid">
-  {% for project in site.projects %}
-    <a href="{{ project.url | relative_url }}" class="project-card">
-      <img src="{{ project.header.teaser | relative_url }}" class="project-img">
-      <div class="project-info">
-        <h3 class="project-title">{{ project.title }}</h3>
-        <p class="project-excerpt">{{ project.excerpt | strip_html }}</p>
+<div class="research-grid">
+  {% for research in site.researchs %}
+    <a href="{{ research.url | relative_url }}" class="research-card">
+      <img src="{{ research.header.teaser | relative_url }}" class="research-img">
+      <div class="research-info">
+        <h3 class="research-title">{{ research.title }}</h3>
+        <p class="research-excerpt">{{ research.excerpt | strip_html }}</p>
       </div>
     </a>
   {% endfor %}

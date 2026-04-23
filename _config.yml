@@ -338,3 +338,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+  research:
+    output: true
+    permalink: /research/:name/
