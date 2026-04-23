@@ -96,7 +96,7 @@ entries_layout: grid  # 如果妳想要卡片式排版，可以用 grid；想要
 {% assign research_groups = site.research | group_by: 'topic' %}
 
 {% for group in research_groups %}
-  <details class="category-box" open> <summary>{{ group.name | capitalize }} ({{ group.items.size }})</summary>
+  <details class="category-box"> <summary>{{ group.name | capitalize }} ({{ group.items.size }})</summary>
     <div class="category-content">
       {% for item in group.items %}
         <a href="{{ item.url | relative_url }}" class="custom-post-item">
