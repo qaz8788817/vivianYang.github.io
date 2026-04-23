@@ -5,8 +5,8 @@ excerpt: "An AI-powered system leveraging the YOLO architecture to detect home f
 header:
   teaser: /assets/images/default_teaser.png
 author_profile: true
-sidebar:
-  nav: "main"
+# sidebar:
+#   nav: "main"
 ---
 
 2024年，與職能治療學系的老師共同完成此系統。

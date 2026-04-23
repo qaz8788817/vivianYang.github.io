@@ -5,8 +5,8 @@ excerpt: "An integrated health monitoring platform combining wearables, LineBot,
 header:
   teaser: /assets/images/default_teaser.png
 author_profile: true
-sidebar:
-  nav: "main"
+# sidebar:
+#   nav: "main"
 ---
 
 2023/03 - 2023/08 與長庚大學職能治療學系的同學共同發想與實作RehaBreathe系統！

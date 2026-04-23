@@ -5,8 +5,8 @@ excerpt: "Setting up a ghost removal web for MRI data, and making researchers us
 header:
   teaser: /assets/images/default_teaser.png
 author_profile: true
-sidebar:
-  nav: "main"
+# sidebar:
+#   nav: "main"
 ---
 2023/07 - 2023/08於臺灣國家衛生研究院實習期間所完成的線上系統。
 
