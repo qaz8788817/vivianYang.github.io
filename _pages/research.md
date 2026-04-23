@@ -1,80 +1,21 @@
 ---
-layout: archive
-title: "Research"
+layout: single
+title: "Research Library"
 permalink: /research/
-author_profile: true
+author_rpfile: true
 ---
 
-<style>
-  /* 讓專案列表看起來更像專業作品集 */
-  .research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-  }
-  .research-card {
-    border: 1px solid #eee;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    text-decoration: none !important;
-    color: inherit;
-    display: flex;
-    flex-direction: column; /* 讓內容垂直排列 */
-  }
-  .research-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-  .research-img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    flex-shrink: 0;
-  }
-  .research-info {
-    padding: 15px;
-    flex-grow: 1; /* 讓資訊區自動填滿剩下的空間 */
-    display: flex;
-    flex-direction: column;
-  }
+這裡是我的研究知識庫，包含 dMRI 指標、機器學習與臨床應用。
 
-  /* 1. 統一標題高度 (最多 2 行) */
-  .research-title {
-    margin: 0 0 10px 0 !important;
-    font-size: 1.25em !important;
-    font-weight: bold;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    min-height: 2.6em; /* 即使只有一行，也會佔據兩行的空間，確保對齊 */
-    line-height: 1.3;
-  }
+{% assign research_groups = site.research | group_by: 'topic' %}
 
-  /* 2. 統一摘要高度 (最多 3 行) */
-  .research-excerpt {
-    font-size: 0.9em;
-    color: #666;
-    line-height: 1.5;
-    margin: 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* 限制顯示三行 */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    height: 4.5em; /* 固定三行的高度 (1.5 * 3) */
-  }
-</style>
-
-<div class="research-grid">
-  {% for research in site.researchs %}
-    <a href="{{ research.url | relative_url }}" class="research-card">
-      <img src="{{ research.header.teaser | relative_url }}" class="research-img">
-      <div class="research-info">
-        <h3 class="research-title">{{ research.title }}</h3>
-        <p class="research-excerpt">{{ research.excerpt | strip_html }}</p>
-      </div>
-    </a>
-  {% endfor %}
-</div>
+{% for group in research_groups %}
+  ## {{ group.name }}
+  <ul>
+    {% for item in group.items %}
+      <li>
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
