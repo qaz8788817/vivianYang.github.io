@@ -6,8 +6,8 @@ topic: FBA  # 這裡自定義妳的分類
 header:
   teaser: /assets/images/default_teaser.png
 author_profile: true
-sidebar:
-  nav: "main"
+# sidebar:
+#   nav: "main"
 ---
 
 ### 1. 行內公式測試 (Inline)
