@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "深入淺出 Fixel-based Analysis：從 FDC 指標看見腦纖維變化"
-collection: research
+# collection: research
 topic: FBA  # 這裡自定義妳的分類
 header:
   teaser: /assets/images/default_teaser.png
