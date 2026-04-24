@@ -7,8 +7,10 @@ excerpt: "探討 FDC 指標如何結合微觀與宏觀資訊，解決 DTI 在複
 header:
   teaser: /assets/images/default_teaser.png
 author_profile: true
-# sidebar:
-#   nav: "main"
+toc: true
+toc_label: "章節索引"
+toc_icon: "cog"
+toc_sticky: true # 讓目錄隨滾動固定在側邊
 ---
 ### 引言
 在擴散磁振造影（difussion MRI, dMRI）的世界裡，學者一直在追求更精確地描繪大腦的神經結構。從最早的 DTI 到現在的 FBA、NODDI，這不僅是模型的演進，更是一場關於「空間解析度」與「生物物理意義」的革命。  
