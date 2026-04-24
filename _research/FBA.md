@@ -19,10 +19,13 @@ author_profile: true
 * 指標失效：這會導致常用的指標（如 FA 值）在纖維交叉處出現「偽性下降」。我們無法判斷這是因為神經真的受損，還是模型單純無法解析複雜的交通網。  
 
 ### 2. 認識新單位：從 Voxel 到 Fixel
+![圖片描述]({{ '/assets/images/FBA/FBA(1)/fod2fixel.png' | relative_url }})
+*圖 1：voxel與Fixel*
 為了突破傳統模型的限制，Fixel-based Analysis (FBA) 引入了全新的分析單位。  
 * Voxel（體素）：是影像中的一個 3D 小方塊，它是空間位址，但沒有方向性。  
 * Fixel（纖維元素）：是在「特定像素」內的「特定方向」纖維成分。  
 透過高等級的擴散模型（如 CSD, Constrained Spherical Deconvolution），我們可以在同一個像素裡拆解出多個 Fixel。這意味著我們終於能針對「某一條特定路徑」進行獨立測量，而不再受鄰近交叉路徑的干擾。
+
 
 ### 3. FBA 的靈魂：三大核心指標
 FBA 最強大的地方在於它提供了三個具備明確生物物理意義的指標。我們可以使用 LaTeX 公式來精確定義它們：  
