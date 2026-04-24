@@ -5,7 +5,7 @@ title: "dMRI技術專欄 (1)：從維度破解大腦纖維的「偽裝」—— 
 topic: FBA  # 這裡自定義妳的分類
 excerpt: "探討 FDC 指標如何結合微觀與宏觀資訊，解決 DTI 在複雜纖維交叉處的侷限性。"
 header:
-  teaser: /assets/images/default_teaser.png
+  teaser: /assets/images/about_me_banner.png
 author_profile: true
 toc: true
 toc_label: "章節索引"
