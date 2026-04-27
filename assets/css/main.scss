@@ -1,7 +1,4 @@
---- 
---- 
-
-// # Only the main Sass file needs front matter (the dashes are enough) 
+--- --- // # Only the main Sass file needs front matter (the dashes are enough) 
 
 @charset "utf-8";
 
@@ -82,35 +79,40 @@
         }
     }
 }
+
 /* ==========================================================================
     自定義：Posts 頁面畫廊圖片統一大小
 ========================================================================== */
 /* 畫廊圖片統一重設大小 */
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 
-  .gallery__item {
-    flex: 1 1 calc(33.333% - 10px); /* 一排三張，可自行調整 */
-    margin-bottom: 0 !important;
+    .gallery__item {
+        flex: 1 1 calc(33.333% - 10px);
+        /* 一排三張，可自行調整 */
+        margin-bottom: 0 !important;
 
-    img {
-      width: 100% !important;
-      height: 200px !important; /* 強制高度，建議設成妳覺得最小的那張的高度 */
-      object-fit: cover; /* 關鍵：圖片會自動裁切填滿，不會變形 */
-      border-radius: 8px;
-      transition: transform 0.3s ease;
+        img {
+            width: 100% !important;
+            height: 200px !important;
+            /* 強制高度，建議設成妳覺得最小的那張的高度 */
+            object-fit: cover;
+            /* 關鍵：圖片會自動裁切填滿，不會變形 */
+            border-radius: 8px;
+            transition: transform 0.3s ease;
 
-      &:hover {
-        transform: scale(1.02);
-      }
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
     }
-  }
 }
 
 /* 當圖片被點開（Lightbox）時，確保它是原始比例 */
 .mfp-img {
-  max-height: 90vh !important;
-  object-fit: contain !important; /* 恢復原始比例不裁切 */
+    max-height: 90vh !important;
+    object-fit: contain !important;
+    /* 恢復原始比例不裁切 */
 }
