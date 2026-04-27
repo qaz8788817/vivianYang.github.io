@@ -9,6 +9,12 @@ gallery:
 - url: /assets/images/2026-04-22/lunch.jpg
   image_path: /assets/images/2026-04-22/lunch.jpg
   alt: "好吃漢堡排套餐"
+- url: /assets/images/2026-04-22/pic1.jpg
+  image_path: /assets/images/2026-04-22/pic1.jpg
+  alt: "跟老師們合照-1"
+- url: /assets/images/2026-04-22/pic2.jpg
+  image_path: /assets/images/2026-04-22/pic2.jpg
+  alt: "跟老師們合照-2"
 
 date: 2026-04-22
 categories:
