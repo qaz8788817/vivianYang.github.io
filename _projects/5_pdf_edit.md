@@ -30,3 +30,4 @@ author_profile: true
 
 ### App介面
 這是最後的介面，等有空我再把它變好看一點點！  
+{% include gallery %}
