@@ -39,6 +39,10 @@ categories:
   - Life
 tags:
   - Japan
+toc: true
+toc_label: "章節索引"
+toc_icon: "cog"
+toc_sticky: true # 讓目錄隨滾動固定在側邊
 ---
 
 ## 出發Takayama
