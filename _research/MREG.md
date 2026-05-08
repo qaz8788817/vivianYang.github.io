@@ -5,7 +5,7 @@ title: "超越 BOLD 的速度——解密超快速磁共振腦大腦造影(MREG)
 topic: MREG
 excerpt: "探索時間解析度小於100毫秒的造影技術，如何捕捉大腦內部的生理震盪與腦脊髓液流動。"
 header:
-  teaser: /assets/images/about_me_banner.png
+  teaser: /assets/images/default_teaser.png
 author_profile: true
 toc: true
 toc_label: "技術索引"
