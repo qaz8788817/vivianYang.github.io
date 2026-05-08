@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "dMRI技術專欄 (2)：解構 FBA 實作流程——從數據預處理到統計分析"
+title: "dMRI技術專欄 (1)：解構 FBA 實作流程——從數據預處理到統計分析"
 # collection: research
 topic: FBA
 excerpt: "深入探討 MRtrix3 中的 FBA 運算流程，以及如何透過 CFE 統計方法挖掘具備生物意義的顯著差異。"
