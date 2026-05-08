@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "dMRI技術專欄 (1)：指標深度解析與統計解讀"
+title: "dMRI技術專欄(1)：指標深度解析與統計解讀"
 # collection: research
 topic: FBA  # 這裡自定義妳的分類
 excerpt: "探討 FDC 指標如何結合微觀與宏觀資訊，解決 DTI 在複雜纖維交叉處的侷限性。"
