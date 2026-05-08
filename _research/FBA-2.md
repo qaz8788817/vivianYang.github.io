@@ -33,7 +33,7 @@ FBA 的分析是在一個共同空間進行的。
 使用所有受試者影像生成的平均模板，能更精確地對齊纖維走向，減少Registration誤差。  
 
 <div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; margin: 20px 0; text-align: center;">
-  <img src="{{ '/assets/images/FBA/FBA(2)/wmfod_tempalte.png' | relative_url }}" 
+  <img src="{{ '/assets/images/FBA/FBA(2)/wmfod_template.png' | relative_url }}" 
        alt="Population Template 示意圖" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd;">
   <p style="font-size: 0.9em; color: #666; margin-top: 10px;">
